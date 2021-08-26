@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
   <link rel="stylesheet" href="sass/style.css">
+  <link rel="stylesheet" href="sass/aos.css">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
@@ -19,7 +20,7 @@
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
 
-        <form action="#" class="search navbar__search navbar__search--mobile_hidden">
+        <form action="#" class="search navbar__search navbar__search--mobile_hidden" data-aos="fade-down">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search">
@@ -154,7 +155,7 @@
           </div>
           <!-- /.swiper-container -->
         <div class="hotel-right">
-          <div class="booking">
+          <div class="booking" data-aos="fade-up">
             <div class="booking__info">
               <div class="booking__price">
                 <span class="booking__start">
@@ -190,7 +191,7 @@
             <button data-toggle="modal"  class="button booking__button">View Other Options</button>
           </div>
           <!-- /.booking -->
-          <div class="map">
+          <div class="map" data-aos="fade-up">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7905.085412615675!2d98.29585084338196!3d7.838124851180509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1628937579185!5m2!1sru!2sru" width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           <!-- /.map -->
         </div>
@@ -201,10 +202,10 @@
   </section>
   <section class="newsletter">
     <div class="newsletter-wrapper">
-      <h2 class="newsletter-title newsletter__title">hotel to our
+      <h2 class="newsletter-title newsletter__title" data-aos="fade-right">hotel to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-      <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
+      <form action="send.php" method="POST" class="subscribe newsletter__subscribe form" data-aos="fade-left">
         <input type="email" class="subscribe__input" placeholder="Your email address*" name="email" required>
         <button class="subscribe__button">Send</button>
       </form>
@@ -291,25 +292,25 @@
       <div class="activities__title">Other Activities</div>
       <!-- /.activities__title -->
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
           <img src="img/activities-1.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
           <img src="img/activities-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf course</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
           <img src="img/activities-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
           <img src="img/activities-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery quest</h3>
           <button class="card__button">Book Now</button>
@@ -448,6 +449,7 @@
   </div>
   <!-- /.modal -->
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
